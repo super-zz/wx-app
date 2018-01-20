@@ -1,0 +1,35 @@
+<view class="deliver-tab">
+	<view><text class="{{getAllCss}}" data-type="0" bindtap="getAll">全部投递</text></view>
+	<view class="c"><text class="{{getViewedCss}}" data-type="1" bindtap="getViewed">被查看</text></view>
+	<view class="r"><text class="{{getInviteCss}}" data-type="2" bindtap="getInvite">面试邀请</text></view>
+</view>
+<view class="blank"></view>
+<view class="deliver-list">
+<block wx:if="{{messageCount==0}}" >
+   <view class="nodata">
+        <image src="../../image/no-data01.png"></image>
+        <view class="tip1">咿，没有消息...</view>
+        <view class="tip2"></view>
+    </view>
+</block>
+   <block wx:for="{{messageList}}" wx:for-item="item">
+	<view class="list-item">
+		<view class="top clear">
+			<view class="title">{{item.wanted_title}}</view>
+			<view class="time">{{item.time_str}}</view>
+		</view>
+		<view class="bottom">
+			<view><image src="../../image/icon-money.png"></image><text class="money">{{item.wanted_price}}</text></view>
+			<view><image src="../../image/icon-resume.png"></image><text>{{item.wanted_position_name}}</text></view>
+			<view><image src="../../image/icon-company.png"></image><text>{{item.wanted_company_name}}</text></view>
+		</view>
+		<view class="status">
+			<image wx:if="{{item.group_name=='被查看'}}" src="../../image/status01.jpg"></image>
+			<image wx:elif="{{item.group_name=='不合适'}}" src="../../image/status02.jpg"></image>
+			<image wx:elif="{{item.group_name=='已投递'}}" src="../../image/status03.jpg"></image>
+			<image wx:elif="{{item.group_name=='面试邀请'}}" src="../../image/status04.jpg"></image>
+		</view>
+	</view>
+	<view class="blank"></view>
+	</block>
+</view>

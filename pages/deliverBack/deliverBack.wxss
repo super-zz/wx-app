@@ -1,0 +1,87 @@
+@import "../../common/css/reset.wxss";
+@import "../../common/css/footer.wxss";
+@import "../../common/css/nodata.wxss";
+.deliver-tab {
+  display: flex;
+  padding: 0 35.1rpx;
+}
+.deliver-tab view {
+  flex: 1;
+}
+.deliver-tab view text {
+  display: inline-block;
+  font-size: 32.76rpx;
+  color: #a6a6a6;
+  height: 81.9rpx;
+  line-height: 81.9rpx;
+  border-bottom: 6rpx solid #fff;
+}
+.deliver-tab view text.current {
+  color: #00c79c;
+  border-bottom-color: #00c79c;
+}
+.deliver-tab view.c {
+  text-align: center;
+}
+.deliver-tab view.r {
+  text-align: right;
+}
+.blank {
+  width: 100%;
+  height: 23.4rpx;
+  background-color: #f6f6f6;
+}
+.deliver-list {
+  padding-bottom: 117rpx;
+}
+.deliver-list .list-item {
+  padding: 35.1rpx;
+  position: relative;
+}
+.deliver-list .list-item .top {
+  border-bottom: 1px dashed #f6f6f6;
+}
+.deliver-list .list-item .top view {
+  float: left;
+  font-size: 32.76rpx;
+  color: #333;
+  height: 70.2rpx;
+  line-height: 70.2rpx;
+}
+.deliver-list .list-item .top view.title {
+  font-weight: bold;
+}
+.deliver-list .list-item .top view.time {
+  float: right;
+  font-size: 25.74rpx;
+  color: #a6a6a6;
+  height: 70.2rpx;
+  line-height: 70.2rpx;
+}
+.deliver-list .list-item .bottom {
+  padding-top: 18.72rpx;
+}
+.deliver-list .list-item .bottom image {
+  width: 28.08rpx;
+  height: 28.08rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}
+.deliver-list .list-item .bottom text {
+  font-size: 30.42rpx;
+  color: #333;
+  height: 46.8rpx;
+  line-height: 46.8rpx;
+}
+.deliver-list .list-item .bottom text.money {
+  color: #ff615f;
+}
+.deliver-list .list-item .status {
+  position: absolute;
+  right: 35.1rpx;
+  bottom: 35.1rpx;
+}
+.deliver-list .list-item .status image {
+  width: 175.5rpx;
+  height: 140.4rpx;
+}

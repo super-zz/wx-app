@@ -1,0 +1,84 @@
+@import "../../common/css/nodata.wxss";
+page {
+  background-color: #f6f6f6;
+}
+.item {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 6rpx;
+  position: relative;
+}
+.item .m {
+  padding: 35.1rpx;
+  padding-bottom: 11.7rpx;
+}
+.item .m .title {
+  color: #333333;
+  font-size: 32.76rpx;
+  padding-bottom: 10rpx;
+}
+.item .m .td {
+  color: #666;
+  line-height: 49.14rpx;
+  font-size: 28.08rpx;
+}
+.item .m .td text {
+  color: #aaa;
+  font-size: 28.08rpx;
+}
+.item .m .td text.time {
+  color: #ff615f;
+}
+.item .delete {
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  width: 70.2rpx;
+  height: 70.2rpx;
+  padding-top: 30.42rpx;
+  padding-left: 20rpx;
+}
+.item .delete view {
+  width: 39.78rpx;
+  height: 39.78rpx;
+}
+.item .lookd {
+  position: relative;
+  line-height: 101.79rpx;
+  height: 101.79rpx;
+  padding-left: 35.4rpx;
+  border-top: 1px solid #e6e6e6;
+  font-size: 30.42rpx;
+  color: #00c79c;
+}
+.item .lookd .san {
+  position: absolute;
+  right: 35.4rpx;
+  top: 40rpx;
+  width: 0;
+  height: 0;
+  border: 10rpx solid transparent;
+  border-left: 11.7rpx solid #eaeaea;
+}
+.overdue {
+  position: relative;
+}
+.overdue .j {
+  position: absolute;
+  top: 60rpx;
+  right: 60rpx;
+  width: 140.4rpx;
+  height: 117rpx;
+}
+.overdue .title {
+  color: #aaa!important;
+}
+.overdue .time {
+  color: #aaa!important;
+}
+.overdue .td {
+  color: #aaa!important;
+}

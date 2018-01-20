@@ -1,0 +1,151 @@
+.bbt(){
+    border-bottom: 1px solid #e0e0e0; 
+}
+.bbtt(){
+    border-top: 1px solid #e0e0e0; 
+}
+.boxsizing(@value: border-box){
+  -webkit-box-sizing: @value;
+  -moz-box-sizing: @value;
+  box-sizing: @value;
+}
+.intension{
+	font-size: 28*1.17rpx;
+	text-align: center;
+	line-height: 80*1.17rpx;
+	height: 80*1.17rpx;
+	color: #333;
+	.bbt(); 
+}
+.classes{
+	padding-bottom: 200rpx;
+	.title{
+		font-size: 22*1.17rpx;
+		padding-top: 10*1.17rpx;
+		padding-left: 30*1.17rpx;
+		line-height: 50*1.17rpx;
+		color: #aaa;
+
+	}
+	.menu-dt{
+		text{
+			display: inline-block;
+			width: 25%;
+			text-align: center;
+			font-size: 22*1.17rpx;
+			line-height: 70*1.17rpx;
+			color: #333;
+			position: relative;
+			&.show{
+				color:#00c79c;				
+			}
+			&::after{
+				content:'';
+				display: inline-block;
+				width: 1px;
+				height: 22*1.17rpx;
+				position:absolute;
+				top: 50%;
+				margin-top: -11*1.17rpx;
+				right: 0;
+				background-color: #e5e5e5;
+			};
+			&.r::after{
+				background-color: #fff;
+			}
+		}
+	}	
+	.menu-dd{
+		.first,.second,.third,.fourth{
+			background-color: #eee;
+			position: relative;
+			label,text{
+				display: inline-block;
+				width: 25%;
+				text-align: center;
+				font-size: 22*1.17rpx;
+				line-height: 70*1.17rpx;
+				color: #333;
+			}
+			&::before{
+				content: '';
+				width: 0rpx;
+				height: 0rpx;
+				border: 16rpx solid transparent;
+				border-bottom-color: #eee;
+				position: absolute;
+				top: -28rpx;
+			};
+		}
+
+		.first::before{
+			left: 77rpx;
+		}
+		.second::before{
+			left: 263rpx;
+		}
+		.third::before{
+			left: 450rpx;
+		}
+		.fourth::before{
+			left: 637rpx;
+		}
+
+	}
+}
+.selected{
+	position: fixed;
+	bottom:0;
+	left: 0;
+	background-color: #fff;
+	padding: 20rpx 30rpx 20rpx 30rpx;
+	width: 100%;
+	.boxsizing();
+	.bbtt();
+	.top{
+		font-size: 22*1.17rpx;
+		line-height: 50*1.17rpx;
+		color: #333;
+	}
+	.cmp{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100rpx;
+		font-size: 28*1.17rpx;
+		line-height: 80*1.17rpx;
+		color: #00c79c;
+
+	}
+	.select-job{
+		.job{
+			display: inline-block;
+			padding: 0 40rpx 0 20rpx;
+			font-size: 22*1.17rpx;
+			line-height: 40*1.17rpx;
+			color: #00c79c;
+			border: 1px solid #e4e4e4;
+			position: relative;
+			margin-right: 30*1.17rpx; 
+			margin-bottom: 10*1.17rpx; 
+		}
+		.close{
+			font-size: 27rpx;
+			position: absolute;
+			right: 0;
+			top: 0;
+			line-height: 38*1.17rpx;
+			display:inline-block;
+			padding: 0 10rpx;
+			font-size: 28rpx;
+			font-family: 'microsoft yahei';
+
+		}
+	}
+}
+.show{
+	display: block;
+}
+.hidden{
+	display: none;
+}

@@ -1,0 +1,88 @@
+@import "../../common/css/reset.wxss";
+@import "../../common/css/footer.wxss";
+.itemlist {
+  padding: 35.1rpx;
+  position: relative;
+}
+.itemlist .title {
+  width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 35.1rpx;
+  color: #333;
+  height: 70.2rpx;
+  line-height: 70.2rpx;
+}
+.itemlist .c {
+  font-size: 30.42rpx;
+  color: #666;
+  height: 42.12rpx;
+  line-height: 42.12rpx;
+}
+.itemlist .c text {
+  font-size: 30.42rpx;
+  color: #ff615f;
+  height: 42.12rpx;
+  line-height: 42.12rpx;
+}
+.itemlist .btn {
+  margin-top: 20rpx;
+  border-top: 1px solid #f3f3f3;
+  padding-top: 20rpx;
+}
+.itemlist .btn view {
+  width: 210.6rpx;
+  text-align: center;
+  display: inline-block;
+  font-size: 28.08rpx;
+  color: #00c79c;
+  height: 60.84rpx;
+  line-height: 60.84rpx;
+  border: 1px solid #00c79c;
+  border-radius: 6rpx;
+  margin-right: 20rpx;
+}
+.itemlist .btn .delete {
+  color: #555;
+  border-color: #dfdfdf;
+  margin-right: 0;
+}
+.itemlist .status {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 187.2rpx;
+  height: 187.2rpx;
+}
+.itemlist .status .a {
+  position: absolute;
+  top: 46.8rpx;
+  right: 35.1rpx;
+  color: #a6a6a6;
+  font-size: 28.08rpx;
+}
+.itemlist .status .no {
+  color: #ff615f;
+}
+.itemlist .status .b {
+  position: absolute;
+  top: 58.5rpx;
+  right: 58.5rpx;
+  font-size: 32.76rpx;
+  color: #00c79c;
+  font-weight: bold;
+  text-align: center;
+}
+.itemlist .status .b view {
+  font-weight: normal;
+  color: #a6a6a6;
+  font-size: 23.4rpx;
+}
+.blank {
+  width: 100%;
+  height: 23.4rpx;
+  background-color: #f6f6f6;
+}

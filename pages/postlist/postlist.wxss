@@ -1,0 +1,281 @@
+@import "../../common/css/reset.wxss";
+@import "../../common/css/footer.wxss";
+@import "../../common/css/nodata.wxss";
+.postlist {
+  position: relative;
+  top:130rpx;
+}
+.filtrate .loading {
+  position: absolute;
+  top: 58.5rpx;
+  width: 100%;
+}
+.filtrate .loading image {
+  display: block;
+  margin: 0 auto;
+  width: 58.5rpx;
+  height: 58.5rpx;
+}
+.filtrate .modify {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 35.1rpx;
+  border-bottom: 1px solid #f6f6f6;
+  position: fixed;
+  top: 70.2rpx;
+  left: 0;
+  z-index: 9999;
+  background-color: #fff;
+}
+.filtrate .modify .a {
+  width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 28.08rpx;
+  color: #aaa;
+  line-height: 70.2rpx;
+}
+.filtrate .modify .b {
+  position: absolute;
+  right: 35.1rpx;
+  top: 0;
+  font-size: 28.08rpx;
+  color: #00c79c;
+  line-height: 70.2rpx;
+}
+.filtrate .modify .b image {
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  padding-top: 20rpx;
+}
+.postlist .list-item {
+  padding: 30rpx 30rpx 0 30rpx;
+  background: #fff;
+  margin-bottom: 16rpx;
+  position: relative;
+}
+.postlist .list-item .apply {
+  position: absolute;
+  width: 117rpx;
+  border-radius: 6rpx;
+  text-align: center;
+  right: 32.76rpx;
+  top: 36%;
+  background: #ff615f;
+  font-size: 28.08rpx;
+  color: #fff;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.postlist .list-item .item-top {
+  position: relative;
+  padding-right: 150rpx;
+  padding-bottom: 11.7rpx;
+  border-bottom: 1px dashed #ddd;
+}
+.postlist .list-item .item-top .title {
+  display: block;
+  font-size: 32.76rpx;
+  color: #333;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+.postlist .list-item .item-top .salary {
+  display: block;
+  font-size: 35.1rpx;
+  color: #ff615f;
+  height: 53rpx;
+  line-height: 53rpx;
+}
+.postlist .list-item .item-top .extra {
+  width: 100%;
+}
+.postlist .list-item .item-top .extra text {
+  display: inline-block;
+  padding: 0 8rpx;
+  margin-right: 8rpx;
+  margin-bottom: 8rpx;
+  font-size: 23.4rpx;
+  color: #00c79c;
+  height: 35.1rpx;
+  line-height: 35.1rpx;
+  border: 2rpx solid #00c79c;
+}
+.postlist .list-item .item-top .time {
+  position: absolute;
+  right: 0;
+  top: 8rpx;
+  font-size: 28.08rpx;
+  color: #aaa;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.postlist .list-item .item-bottom {
+  position: relative;
+  padding-right: 150rpx;
+}
+.postlist .list-item .item-bottom .addr {
+  font-size: 25.74rpx;
+  color: #aaa;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.postlist .list-item .item-bottom .range {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 23.4rpx;
+  color: #aaa;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.postlist .line {
+  height: 15.21rpx;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+.filtrate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  background-color: #fff;
+}
+.filtrate .sort-box {
+  padding: 11.7rpx 0;
+  height: 70.2rpx;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e0e0e0;
+}
+.filtrate .sort-box .sort {
+  float: left;
+  width: 33.333%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-right: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 30.42rpx;
+  color: #333;
+  height: 46.8rpx;
+  line-height: 46.8rpx;
+}
+.filtrate .sort-box .bordernone {
+  border-right: none;
+}
+.filtrate .sort-result {
+  position: absolute;
+  top: 70.2rpx;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10002;
+}
+.filtrate .sort-result .btn {
+  font-size: 28.08rpx;
+  width: 90%;
+  line-height: 76.05rpx;
+  height: 76.05rpx;
+  background-color: #00c79c;
+  color: #fff;
+  border-radius: 6rpx;
+  text-align: center;
+  display: block;
+  margin: 24rpx auto;
+}
+.filtrate .sort-area .area-list {
+  height: 603.72rpx;
+  border-bottom: 1px solid #e0e0e0;
+}
+.filtrate .sort-area .area-list .scroll-left {
+  float: left;
+  width: 33%;
+  height: 603.72rpx;
+}
+.filtrate .sort-area .area-list .scroll-left .district {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-left: 46.8rpx;
+  font-size: 28.08rpx;
+  color: #666;
+  height: 93.6rpx;
+  line-height: 93.6rpx;
+  border-bottom: 1px solid #fff;
+  border-left: 2px solid #f2f2f2;
+}
+.filtrate .sort-area .area-list .scroll-left .district.active {
+  color: #00c79c;
+  background-color: #fff;
+  border-left-color: #00c79c;
+}
+.filtrate .sort-area .area-list .scroll-right {
+  float: left;
+  width: 67%;
+  height: 603.72rpx;
+}
+.filtrate .sort-area .area-list .scroll-right .detail {
+  width: 100%;
+  padding-left: 46.8rpx;
+  font-size: 28.08rpx;
+  color: #666;
+  height: 93.6rpx;
+  line-height: 93.6rpx;
+  border-bottom: 1px solid #f2f2f2;
+}
+.filtrate .sort-area .area-list .scroll-right .detail.active {
+  color: #00c79c;
+}
+.filtrate .sort-pay .pay-list {
+  padding: 46.8rpx 40.95rpx 20rpx 40.95rpx;
+  border-bottom: 1px solid #e0e0e0;
+}
+.filtrate .sort-pay .pay-list text {
+  font-size: 28.08rpx;
+  display: inline-block;
+  width: 315.9rpx;
+  height: 70.2rpx;
+  line-height: 70.2rpx;
+  text-align: center;
+  border-radius: 6rpx;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20rpx;
+}
+.filtrate .sort-pay .pay-list .item {
+  margin-right: 34rpx;
+}
+.filtrate .sort-pay .pay-list .active {
+  border-color: #00c79c;
+}
+.filtrate .sort-weal .weal-list {
+  padding-top: 40rpx;
+  padding-left: 40rpx;
+  border-bottom: 1px solid #e0e0e0;
+}
+.filtrate .sort-weal .weal-list text {
+  font-size: 30.42rpx;
+  height: 58.5rpx;
+  line-height: 58.5rpx;
+  text-align: center;
+  display: inline-block;
+  width: 198.9rpx;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 35.1rpx;
+  margin-right: 35.1rpx;
+  border-radius: 6rpx;
+}
+.filtrate .sort-weal .weal-list .active {
+  border-color: #00c79c;
+}

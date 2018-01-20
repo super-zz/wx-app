@@ -1,0 +1,96 @@
+<view class="a"> 
+
+	<view class="top">
+		<view class="post">{{post.title}}</view>
+		<view>
+			<text>{{post.refresh_at}}更新</text>
+			<text class="pd">浏览{{post.view_count}}</text>
+			<text>申请{{post.deliver_count}}</text>
+		</view>
+	</view>
+	<view class="detail">
+<view class="pay">{{post.price}}</view>
+<view class="else">
+<image src="../../image/icon-daibiao.png"></image><text>{{post.job_tag_name}}</text>	
+<image src="../../image/icon-ren.png"></image><text>{{post.employ_num}}</text>	
+<image src="../../image/icon-nian.png"></image><text>{{post.experience}}</text>	
+<image src="../../image/icon-xueli.png"></image><text class="mr">{{post.education}}</text>	
+</view>
+<view class="add">
+<text>地址：{{post.address}}</text><image style="width:30rpx;height:30rpx;vertical-align: middle; " src="../../image/icon-addr.png"></image>
+</view>
+</view>
+	<view class="blank"></view>
+	<view class="describe">
+		<view class="title">职位描述</view>
+		<view class="list" style="height:{{describeHeight}}">{{post.description}}
+		</view>
+		<block wx:if="{{describeTrueHeight>250}}">
+		<view bindtap="showMore">点击展开</view>
+		</block>
+	</view>
+	<view class="blank"></view>
+	<view class="weal">
+		<view class="title">公司福利</view>
+		<view class="tr">
+			<block wx:for="{{post.welfare_tags}}" wx:for-item="tag">
+				<view class="td">
+				<image src="../../image/{{tag.py}}.png"></image>
+				<text>{{tag.name}}</text>
+			</view>
+			</block>
+		</view>
+		
+	</view>
+	<view class="blank"></view>
+	<view class="company">
+		<view class="name clear"><text>{{company.name}}</text><text class="rz">认证</text></view>
+		<view class="gm">
+			<text>{{company.type}}</text>|
+			<text>{{company.trade}}</text>|	
+			<text>{{company.people_num}}</text>
+		</view>
+		<view class="gm">
+		联系人：{{post.employer}}
+		</view>
+	</view>
+	<view class="intro">
+		<view class="title">公司简介</view>
+		<view class="intro-detail">
+			{{company.description}}
+		</view>	
+	</view>
+	<view class="blank"></view>
+	<view class="recommend">
+		<view class="similar">相似职位推荐</view>
+		<block wx:for="{{recommendPosts}}" wx:for-item="i">
+		<view class="post-item">
+			<view class="item-top">
+			<navigator open-type="navigate" url="/pages/postDetail/postDetail?puid={{i.puid}}">
+				<text class="title">{{i.title}}</text>
+				<text class="salary">{{i.price}}</text>
+				<view class="extra">
+				 <block wx:for="{{i.welfare_tags}}" wx:for-item="j" wx:for-index="idx">
+				 <block wx:if="{{idx<3}}" >
+                    <text>{{j}}</text>
+                </block>
+				</block>
+				</view>
+				</navigator>
+				<view class="time">{{i.post}}</view>
+				<view class="apply" bindtap="deliver" data-puid="{{i.puid}}">申请</view>
+			</view>
+		</view>
+		</block>
+	</view>
+</view>
+<view class="bottom">
+	<view class="send" data-puid="{{post.puid}}" bindtap="deliver">
+		<image src="../../image/icon-send.png"></image>
+		<text>投简历</text>
+	</view>
+	<view class="call" bindtap="callPhone" data-phone="{{post.phone}}">
+		<image src="../../image/icon-call.png"></image>
+		<text>打电话</text>
+	</view>
+</view>

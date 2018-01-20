@@ -1,0 +1,8 @@
+<view  bindtap="go">
+<image class="img-index" src="../../image/index.jpg"></image>
+<view  class="in" bindtap="go">点击进去</view>
+<view class="bt">
+	<image class="b1" src="../../image/resume_wave.png"></image>
+	
+</view>
+</view>

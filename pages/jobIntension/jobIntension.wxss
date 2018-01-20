@@ -1,0 +1,144 @@
+.intension {
+  font-size: 32.76rpx;
+  text-align: center;
+  line-height: 93.6rpx;
+  height: 93.6rpx;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+.classes {
+  padding-bottom: 200rpx;
+}
+.classes .title {
+  font-size: 25.74rpx;
+  padding-top: 11.7rpx;
+  padding-left: 35.1rpx;
+  line-height: 58.5rpx;
+  color: #aaa;
+}
+.classes .menu-dt text {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  font-size: 25.74rpx;
+  line-height: 81.9rpx;
+  color: #333;
+  position: relative;
+}
+.classes .menu-dt text.show {
+  color: #00c79c;
+}
+.classes .menu-dt text::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 25.74rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -12.87rpx;
+  right: 0;
+  background-color: #e5e5e5;
+}
+.classes .menu-dt text.r::after {
+  background-color: #fff;
+}
+.classes .menu-dd .first,
+.classes .menu-dd .second,
+.classes .menu-dd .third,
+.classes .menu-dd .fourth {
+  background-color: #eee;
+  position: relative;
+}
+.classes .menu-dd .first label,
+.classes .menu-dd .second label,
+.classes .menu-dd .third label,
+.classes .menu-dd .fourth label,
+.classes .menu-dd .first text,
+.classes .menu-dd .second text,
+.classes .menu-dd .third text,
+.classes .menu-dd .fourth text {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  font-size: 25.74rpx;
+  line-height: 81.9rpx;
+  color: #333;
+}
+.classes .menu-dd .first::before,
+.classes .menu-dd .second::before,
+.classes .menu-dd .third::before,
+.classes .menu-dd .fourth::before {
+  content: '';
+  width: 0rpx;
+  height: 0rpx;
+  border: 16rpx solid transparent;
+  border-bottom-color: #eee;
+  position: absolute;
+  top: -28rpx;
+}
+.classes .menu-dd .first::before {
+  left: 77rpx;
+}
+.classes .menu-dd .second::before {
+  left: 263rpx;
+}
+.classes .menu-dd .third::before {
+  left: 450rpx;
+}
+.classes .menu-dd .fourth::before {
+  left: 637rpx;
+}
+.selected {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 20rpx 30rpx 20rpx 30rpx;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid #e0e0e0;
+}
+.selected .top {
+  font-size: 25.74rpx;
+  line-height: 58.5rpx;
+  color: #333;
+}
+.selected .cmp {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100rpx;
+  font-size: 32.76rpx;
+  line-height: 93.6rpx;
+  color: #00c79c;
+}
+.selected .select-job .job {
+  display: inline-block;
+  padding: 0 40rpx 0 20rpx;
+  font-size: 25.74rpx;
+  line-height: 46.8rpx;
+  color: #00c79c;
+  border: 1px solid #e4e4e4;
+  position: relative;
+  margin-right: 35.1rpx;
+  margin-bottom: 11.7rpx;
+}
+.selected .select-job .close {
+  font-size: 27rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 44.46rpx;
+  display: inline-block;
+  padding: 0 10rpx;
+  font-size: 28rpx;
+  font-family: 'microsoft yahei';
+}
+.show {
+  display: block;
+}
+.hidden {
+  display: none;
+}

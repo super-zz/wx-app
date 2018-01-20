@@ -1,0 +1,77 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/postlist/postlist",
+    "pages/deliverBack/deliverBack",
+    "pages/feedback/feedback",
+    "pages/interviewInfor/interviewInfor",
+    "pages/information/information",
+    "pages/resumeInfor/resumeInfor",
+    "pages/resumeList/resumeList",
+    "pages/myresume/myresume",
+    "pages/jobIntension/jobIntension",
+    "pages/register/register",
+    "pages/personcenter/personcenter",
+    "pages/login/login",
+    "pages/logs/logs",
+    "pages/postDetail/postDetail"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/postlist/postlist",
+        "text": "找工作",
+        "iconPath": "image/icon-footer-1-0.png",
+        "selectedIconPath": "image/icon-footer-1-1.png"
+      },
+      {
+        "pagePath": "pages/personcenter/personcenter",
+        "text": "个人中心",
+        "iconPath": "image/icon-footer-2-0.png",
+        "selectedIconPath": "image/icon-footer-2-1.png"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "text": "消息",
+        "iconPath": "image/icon-footer-3-0.png",
+        "selectedIconPath": "image/icon-footer-3-1.png"
+      }
+    ]
+  },
+  "tabBar1": {
+    "listTest": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/register/register",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/postlist/postlist",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/personcenter/personcenter",
+        "text": "postlist"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "text": "myresume"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

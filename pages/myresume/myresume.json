@@ -1,0 +1,19 @@
+{
+    "navigationBarTitleText": "编辑资料",
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页111"
+            },
+            {
+                "pagePath": "pages/postlist/postlist",
+                "text": "postlist"
+            },
+            {
+                "pagePath": "pages/myresume/myresume",
+                "text": "myresume"
+            }
+        ]
+    }
+}

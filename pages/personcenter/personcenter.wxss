@@ -1,0 +1,123 @@
+@import "../../common/css/reset.wxss";
+@import "../../common/css/footer.wxss";
+.top {
+  height: 300rpx;
+  width: 100%;
+  background: url(../../image/resume_wave.png) center bottom no-repeat;
+  background-color: #e5f9f8;
+  background-size: contain;
+  padding-top: 46.8rpx;
+}
+.top .tx {
+  display: block;
+  margin: 0 auto;
+  width: 163.8rpx;
+  height: 163.8rpx;
+  border: 4rpx solid #edfbfa;
+  border-radius: 50%;
+  margin-bottom: 18.72rpx;
+}
+.top .name {
+  display: block;
+  text-align: center;
+  font-size: 35.1rpx;
+  font-weight: bold;
+  color: #009676;
+}
+.top .status {
+  display: block;
+  text-align: center;
+  font-size: 28.08rpx;
+  color: #009676;
+  line-height: 56rpx;
+}
+.top .modify image {
+  position: absolute;
+  right: 35.1rpx;
+  top: 46.8rpx;
+  width: 35.1rpx;
+  height: 35.1rpx;
+}
+.line {
+  width: 100%;
+  height: 23.4rpx;
+  background-color: #f6f6f6;
+}
+.tab .tab-item {
+  height: 104.13rpx;
+  width: 100%;
+  border-bottom: 1px solid #f3f3f3;
+  position: relative;
+}
+.tab .tab-item .pd {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.tab .tab-item .pd view {
+  display: inline-block;
+  line-height: 104.13rpx;
+  font-size: 32.76rpx;
+}
+.tab .tab-item .pd .icon {
+  float: left;
+  width: 36.27rpx;
+  height: 36.27rpx;
+  background: url(../../image/sprites.png) no-repeat;
+  background-size: 340rpx;
+  background-position-y: -94rpx;
+  margin-top: 35.1rpx;
+}
+.tab .tab-item .pd .icon1 {
+  background-position-x: -10rpx;
+}
+.tab .tab-item .pd .icon2 {
+  background-position-x: -62rpx;
+}
+.tab .tab-item .pd .icon3 {
+  background-position-x: -112rpx;
+}
+.tab .tab-item .pd .icon4 {
+  background-position-x: -156rpx;
+}
+.tab .tab-item .pd .new {
+  float: left;
+  width: 46.8rpx;
+  height: 29.25rpx;
+  background: url(../../image/sprites.png) no-repeat;
+  background-size: 340rpx;
+  background-position-x: -196rpx;
+  background-position-y: -54rpx;
+  margin-top: 38.61rpx;
+}
+.tab .tab-item .pd .text {
+  float: left;
+  padding-left: 6rpx;
+  padding-right: 10rpx;
+}
+.tab .tab-item .pd .per {
+  float: right;
+  font-size: 28.08rpx;
+  color: #aaa;
+  padding-right: 40rpx;
+}
+.tab .tab-item .pd .san {
+  float: right;
+  width: 0;
+  height: 0;
+  border: 10rpx solid transparent;
+  border-left: 11.7rpx solid #eaeaea;
+  margin-top: 42.12rpx;
+}
+.unbind_button{
+    display: block;
+    margin: 0 auto; 
+    width: 80%;
+    color: #fff;
+    background: #33d2b0;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 60rpx;
+    font-size: 34rpx;
+}

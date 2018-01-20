@@ -1,0 +1,88 @@
+<view class="filtrate">
+    <view class="sort-box">
+        <view class="sort" bindtap="tabAreaDetail" data-tab="quyu">区域</view>
+        <view class="sort" bindtap="tabPayDetail">薪资</view>
+        <view class="sort bordernone" bindtap="tabWealDetail">福利</view>
+    </view>
+    <view class="sort-result sort-area" style="display:{{areaHidden?'block':'none'}};">
+        <view class="area-list">
+            <scroll-view class="scroll-left" scroll-y="true" >
+                <block wx:for="{{areaList}}" wx:for-item="district">
+                    <view class="district {{index==selectDistrictIndex?'active':''}}" bindtap="selectDistrict"  data-index="{{index}}" data-district-id="{{district.district_id}}">{{district.name}}</view>
+                </block>
+            </scroll-view>
+            <scroll-view class="scroll-right" scroll-y="true">
+                <block wx:for="{{streetList}}" wx:for-item="street">
+                    <view class="detail {{index==selectStreetIndex?'active':''}}" bindtap="selectStreet"data-index="{{index}}" data-street-id="{{street.street_id}}">{{street.name}}</view>
+                </block>
+            </scroll-view>
+        </view>
+         <view bindtap="search" class="btn">确定</view>
+    </view>
+    <view class="sort-result sort-pay" style="display:{{payHidden?'block':'none'}};">
+        <view class="pay-list">
+            <block wx:for="{{salaryList}}" wx:for-index="i" wx:for-item="item">
+             <text bindtap="selectSalary" data-index="{{i}}" class="{{i%2==0?'item':''}} {{i ==selectSalaryIndex?'active':''}}">{{item.name}}</text>
+             </block>
+        </view>
+        <view bindtap="search" class="btn">确定</view>
+    </view>
+    <view class="sort-result sort-weal" style="display:{{wealHidden?'block':'none'}};">
+        <view class="weal-list">
+            <block wx:for="{{welfareList}}" wx:for-item="welfare">
+                <text bindtap="selectWelfare" data-index="{{index}}" data-id="{{welfare.id}}" class="{{welfare.isSelect ==1?'active':''}}">{{welfare.name}}</text>
+            </block>
+        </view>
+        <view bindtap="search" class="btn">确定</view>
+    </view>
+    <view class="model" bindtap="touchModel" style="display:{{modelHidden?'block':'none'}};">
+    </view>
+    <navigator open-type="navigate" url="/pages/jobIntension/jobIntension?selectJob={{selectJob}}&jobTag={{jobTag}}">
+ <view class="modify" bindtap="go1">
+        <view class="a">
+            求职意向：{{jobTagName}}
+        </view>
+        <view class="b">
+            <image src="../../image/icon-list-modify.png"></image>
+            修改
+        </view>
+    </view>
+
+    </navigator>
+</view>
+
+<view class="postlist">
+<!--<view class="loading">
+        <image src="../../image/loading.gif"></image>
+    </view>-->
+    <scroll-view scroll-y="true" style="height: {{height}};" scroll-top="{{scrollTop}}" bindscroll="scroll" bindscrolltolower="loadMore">
+    <block wx:for="{{postList}}" wx:for-item="i">
+
+        <view  class="list-item">
+        <navigator open-type="navigate" url="/pages/postDetail/postDetail?puid={{i.puid}}">
+            <view class="item-top">
+                <text class="title">{{i.title}}</text>
+                <text class="salary">{{i.price}}</text>
+                <view class="extra">
+                <block wx:for="{{i.tags}}" wx:for-index="idx" wx:for-item="j">
+                <block  wx:if="{{idx<3}}">
+                    <text>{{j}}</text>
+                    </block >
+                </block>
+                </view>
+                <view class="time">{{i.time}}</view>
+            </view>
+            <view class="item-bottom">
+                <text class="addr">{{i.company_name}}</text>
+                <text class="range">{{i.district_name}}</text>
+            </view>
+            </navigator>
+        <view class="apply" data-puid="{{i.puid}}" bindtap="deliver">申请</view>
+        </view>
+
+
+        <view class="line"></view>
+    </block>
+    </scroll-view>
+    <loading wx:if="{{hiddenLoading}}">正在加载</loading>
+</view>

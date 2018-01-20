@@ -1,0 +1,22 @@
+<template name="footer">
+   <view class="footer">
+        <view class="item" bindtap="goRecommendPage">
+            <view class="work">
+                <image src="../../image/icon-footer-1-{{footer.findjob==1?'1':'0'}}.png" class="foot-icon"></image>
+                <text>找工作</text>
+            </view>
+        </view>
+        <view class="item" bindtap="goUserCenterPage">
+            <view class="center">
+                <image src="../../image/icon-footer-2-{{footer.personcenter==1?'1':'0'}}.png" class="foot-icon"></image>
+                <text>个人中心</text>
+            </view>
+        </view>
+        <view class="item" bindtap="goMessagePage">
+            <view class="message"> 
+                <image src="../../image/icon-footer-3-{{footer.message==1?'1':'0'}}.png" class="foot-icon"></image>
+                <text>消息</text>
+            </view>
+        </view>
+    </view>
+</template>

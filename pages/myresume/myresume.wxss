@@ -1,0 +1,145 @@
+@import "../../common/css/reset.wxss";
+@import "../../common/css/footer.wxss";
+@import "../register/register.wxss";
+page {
+  background-color: #f6f6f6;
+}
+.line {
+  width: 100%;
+  height: 23.4rpx;
+  background-color: #f6f6f6;
+}
+.resume .resume-photo {
+  height: 152.1rpx;
+  line-height: 152.1rpx;
+  margin-top: 35.1rpx;
+  margin-bottom: 17.55rpx;
+  background-color: #fff;
+  padding: 0 35.1rpx;
+}
+.resume .resume-photo view {
+  display: inline-block;
+}
+.resume .resume-photo .img {
+  float: right;
+  width: 117rpx;
+  height: 117rpx;
+  border-radius: 50%;
+  margin-right: 17.55rpx;
+  margin-top: 17.55rpx;
+}
+.resume .resume-photo .san {
+  float: right;
+  width: 0;
+  height: 0;
+  border: 10rpx solid transparent;
+  border-left: 11.7rpx solid #eaeaea;
+  margin-top: 70.2rpx;
+}
+.resume .resume-item {
+  border-bottom: 1px solid #f6f6f6;
+  background-color: #fff;
+}
+.resume .resume-item .pd {
+  position: relative;
+  display: flex;
+  padding: 0 81.9rpx 0 35.1rpx;
+}
+.resume .resume-item .pd .san {
+  position: absolute;
+  top: 42.12rpx;
+  right: 23.4rpx;
+  width: 0;
+  height: 0;
+  border: 10rpx solid transparent;
+  border-left: 11.7rpx solid #eaeaea;
+}
+.resume .resume-item .pd input {
+  flex: 6;
+  float: right;
+  height: 93.6rpx;
+  line-height: 93.6rpx;
+  text-align: right;
+}
+.resume .resume-item .pd picker {
+  flex: 6;
+}
+.resume .resume-item .pd .choice-content {
+  font-size: 32.76rpx;
+  color: #aaa;
+  text-align: right;
+}
+.resume .resume-item .pd .radio-sex {
+  flex: 6;
+}
+.resume .resume-item .pd .register-sex {
+  float: right;
+  padding:0 0 0 10rpx;
+}
+.resume .resume-status {
+  margin-top: 17.55rpx;
+  background-color:#fff;
+  height:140.4rpx;
+  line-height:140.4rpx;
+}
+.resume .resume-status .pd {
+  display: flex;
+  padding:0 81.9rpx 0 35.1rpx;
+}
+.resume .resume-status .pd .status {
+  flex: 6;
+}
+.resume .resume-status .pd .status text {
+  width: 181.35rpx;
+  height: 81.9rpx;
+  line-height: 81.9rpx;
+  text-align: center;
+  float: right;
+  margin-top: 30.42rpx;
+  font-size: 32.76rpx;
+}
+.resume .resume-status .pd .status .al {
+  color: #00c79c;
+  border: 1px solid #00c79c;
+  border-top-right-radius: 6rpx;
+  border-bottom-right-radius: 6rpx;
+}
+.resume .resume-status .pd .status .ing {
+  border: 1px solid #00c79c;
+  background-color: #00c79c;
+  color: #fff;
+  border-top-left-radius: 6rpx;
+  border-bottom-left-radius: 6rpx;
+}
+.resume .resume-status .pd .dt {
+  line-height: 140.4rpx;
+}
+.resume .dt {
+  font-size: 32.76rpx;
+  height: 93.6rpx;
+  line-height: 93.6rpx;
+  display: table-cell;
+  width: 160rpx;
+  text-align-last: justify;
+}
+.resume .save {
+  padding: 0 35.1rpx;
+}
+.resume .save view {
+  margin-top: 81.9rpx;
+  height: 93.6rpx;
+  line-height: 93.6rpx;
+  font-size: 35.1rpx;
+  background-color: #00c79c;
+  border-radius: 6rpx;
+  text-align: center;
+  color: #fff;
+}
+.switch {
+  float: right;
+}
+
+.resume-sex-text {
+  padding:0 0 0 10rpx;
+  font-size:26rpx;
+}

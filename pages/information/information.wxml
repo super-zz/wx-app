@@ -1,0 +1,44 @@
+<navigator open-type="navigate" url="/pages/interviewInfor/interviewInfor?type=1">
+<view class="x">
+	<view class="icon" style="background: url(http://sta.ganjistatic1.com/src/image/project/Columbus/details-sprites.png) no-repeat; background-size:365rpx; background-position:-8rpx -290rpx;"><text wx:if="{{messageInfo.invite>0}}">{{messageInfo.invite}}</text></view>
+	<view class="title">
+		<text>面试消息</text>
+		<text class="i" wx:if="{{messageInfo.invite==0}}">暂无未读消息</text>
+		<text class="i" wx:else>{{messageInfo.invite}}条新的面试消息</text>
+	</view>
+	<view class="san"></view>
+</view>
+</navigator>
+<navigator open-type="navigate" url="/pages/interviewInfor/interviewInfor?type=2">
+<view class="x">
+	<view class="icon" style="background: url(http://sta.ganjistatic1.com/src/image/project/Columbus/details-sprites.png) no-repeat; background-size:365rpx; background-position:-118rpx -290rpx;"><text wx:if="{{messageInfo.miss_call>0}}">{{messageInfo.miss_call}}</text></view>
+	<view class="title">
+		<text>未接电话</text>
+		<text class="i" wx:if="{{messageInfo.miss_call==0}}">暂无未读消息</text>
+		<text class="i" wx:else>错过了{{messageInfo.miss_call}}家公司的电话</text>
+	</view>
+	<view class="san"></view>
+</view>
+</navigator>
+<navigator open-type="navigate" url="/pages/interviewInfor/interviewInfor?type=3">
+<view class="x">
+	<view class="icon" style="background: url(http://sta.ganjistatic1.com/src/image/project/Columbus/details-sprites.png) no-repeat; background-size:365rpx; background-position:-229rpx -290rpx;"><text wx:if="{{messageInfo.viewed>0}}">{{messageInfo.viewed}}</text></view>
+	<view class="title">
+		<text>谁看过我</text>
+		<text class="i" wx:if="{{messageInfo.viewed==0}}">暂无未读消息</text>		
+		<text class="i" wx:else>{{messageInfo.viewed}}家公司看过我</text>
+	</view>
+	<view class="san"></view>
+</view>
+</navigator>
+<navigator open-type="navigate" url="/pages/interviewInfor/interviewInfor?type=4">
+<view class="x">
+	<view class="icon" style="background: url(http://sta.ganjistatic1.com/src/image/project/Columbus/details-sprites.png) no-repeat; background-size:365rpx; background-position:-8rpx -402rpx;"><text wx:if="{{messageInfo.system>0}}">{{messageInfo.system}}</text></view>
+	<view class="title">
+		<text>系统消息</text>
+		<text class="i" wx:if="{{messageInfo.system==0}}">暂无未读消息哦</text>
+		<text class="i" wx:if="{{messageInfo.system!=0}}">有{{messageInfo.system}}未读消息哦</text>
+	</view>
+	<view class="san"></view>
+</view>
+</navigator>

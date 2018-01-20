@@ -1,0 +1,18 @@
+image{
+	display: block;
+	margin: 0 auto; 
+	width: 200rpx;
+	height: 190rpx;
+	margin-top: 300rpx;
+	margin-bottom: 30rpx;
+}
+view{
+	text-align: center;
+	line-height: 46rpx;
+	font-size: 34rpx;
+    color: #333;
+}
+view text{
+	font-size: 38rpx;
+	color: #00c79c;
+}

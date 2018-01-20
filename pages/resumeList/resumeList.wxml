@@ -1,0 +1,33 @@
+<block wx:for="{{resumeList}}" wx:for-item="i">
+   
+        
+<view class="itemlist">
+<navigator open-type="navigate" url="/pages/resumeInfor/resumeInfor?puid={{i.puid}}">
+	<view class="title">{{i.job_tag_name}}</view>	
+	<view class="c">期望薪资：<text>{{i.price}}</text></view>	
+	<view class="c">工作地点：{{i.address}}</view>
+		<view hidden class="modify">修改简历
+		</view>
+		</navigator>
+	<view  class="btn">
+	
+		  <view class="send" data-index="{{index}}" bindtap="entrustResume" data-puid="{{i.puid}}">
+		  <block wx:if="{{i.is_entrust==1}}">
+		  取消代投
+		  </block>
+		  <block wx:if="{{i.is_entrust==0}}">
+		  帮我投递
+		  </block>
+		   </view>
+		<view class="delete" bindtap="deleteResume" data-index="{{index}}" data-puid="{{i.puid}}">删除
+		</view>
+	</view>
+	<view class="status">
+		<view class="a no" wx:if="{{i.pass_status==0}}"> 审核中 </view>
+		<view class="a no" wx:elif="{{i.pass_status==2}}"> 审核不通过 </view>
+		<view class="b" wx:else>{{i.integrity}}%<view>完整度</view></view>
+	</view>
+</view>
+<view class="blank"></view>
+
+</block>

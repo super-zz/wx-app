@@ -1,0 +1,64 @@
+<block wx:if="{{messageList==0}}">
+<import src="../../common/temolate/nodata.wxml"/>
+<template is="nodata"/>
+   <view class="nodata">
+        <image src="../../image/no-data01.png"></image>
+        <view class="tip1">咿，没有消息...</view>
+        <view class="tip2"></view>
+    </view>
+</block>
+
+<import src="../../common/temolate/nodata.wxml"/>
+<template is="nodata"/>
+<block wx:for="{{messageList}}" wx:for-item="item">
+<view class="item">
+	<view class="delete">
+		<view style="background: url(http://sta.ganjistatic1.com/src/image/project/Columbus/sprites.png) no-repeat;background-size:340rpx; background-position:-150rpx -142rpx;"></view>
+	</view>
+	<view class="m">
+		<view class="title">{{item.content.company_name}}
+		</view>
+		<view class="td">  
+			<text>面试时间：</text><text class="time">{{item.content.interview_time_display}}</text>
+		</view>
+		<view class="td">  
+			<text>面试职位：</text>{{item.content.position}}
+		</view>
+		<view class="td">  
+			<text>面试地点：</text>{{item.content.address}}
+		</view>
+	</view>
+	<navigator open-type="navigate" url="/pages/postDetail/postDetail?puid={{item.id}}">
+	<view hidden class="lookd">
+	查看详情<view class="san"></view>
+	</view>
+	</navigator>
+	
+</view>
+</block>
+
+<view hidden class="item overdue">
+	<image src="../../image/overdue.jpg" class='j'></image>
+	<view class="delete">
+		<view style="background: url(http://sta.ganjistatic1.com/src/image/project/Columbus/sprites.png) no-repeat;background-size:340rpx; background-position:-150rpx -142rpx;"></view>
+	</view>
+	<view class="m">
+		<view class="title">背景啊十大杀手空间
+		</view>
+		<view class="td">  
+			<text>面试时间：</text><text class="time">2013.32132(明天)</text>
+		</view>
+		<view class="td">  
+			<text>面试职位：</text>啊圣诞节卡
+		</view>
+		<view class="td">  
+			<text>面试地点：</text>背景hasidic阿斯顿阿三大厦是空间大斯柯达鞍山酒店
+		</view>
+	</view>
+	<view class="lookd">
+	查看详情<view class="san"></view>
+	</view>
+</view>
+
+
+

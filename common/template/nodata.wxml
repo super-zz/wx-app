@@ -1,0 +1,8 @@
+<template name="nodata">
+    <view class="nodata">
+        <image src="../../image/no-data01.png"></image>
+        <view class="tip1">咿，没有匹配职位...</view>
+        <view class="tip2">修改求职意向，或点击右上角“筛选”按钮，
+扩大求职范围，会有惊喜出现哦～</view>
+    </view>
+</template>

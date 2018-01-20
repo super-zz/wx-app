@@ -1,0 +1,19 @@
+<view>
+   <image class="login-img" src="../../image/login-top.png" />
+</view>
+<view class="login-view">
+    <view class="bottom_line p_relative">
+        <image src="../../image/icon-phone.png" class="login_icon fl"></image>
+        <input bindinput="loginInputPhone" class="login_phone_input fl" placeholder="请输入手机号"/>
+        <text bindtap="getCode" class="login_code_second {{codeTimeOut ? 'timeout': ''}}">{{codeTimeText}}</text>
+    </view>
+    <view class="bottom_line">
+        <image src="../../image/icon-code.png"  class="login_icon fl"></image>
+        <input bindinput="loginInputCode" class="login_code_input fl" placeholder="请输入验证码" />
+    </view>
+    <button bindtap="login" class="login_button">开始找工作</button>
+</view>
+<view class="bottom">
+   <image src="../../image/login-bottom.png" />
+</view>
+

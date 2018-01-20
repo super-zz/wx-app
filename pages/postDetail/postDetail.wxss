@@ -1,0 +1,234 @@
+@import "../../common/css/reset.wxss";
+.a {
+  padding-bottom: 121.68rpx;
+}
+.a .top {
+  padding: 35.1rpx;
+  border-bottom: 1px solid #e6e6e6;
+}
+.a .top view {
+  text-align: center;
+}
+.a .top view text {
+  font-size: 28.08rpx;
+  color: #aaa;
+}
+.a .top .post {
+  font-size: 42.12rpx;
+  color: #333;
+  font-weight: bold;
+}
+.a .top .pd {
+  padding: 0 14rpx;
+}
+.a .detail {
+  padding: 35.1rpx;
+}
+.a .detail .pay {
+  font-size: 37.44rpx;
+  color: #ff615f;
+  line-height: 46.8rpx;
+}
+.a .detail .else {
+  line-height: 40rpx;
+}
+.a .detail .else image {
+  display: inline-block;
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 8rpx;
+  vertical-align: middle;
+}
+.a .detail .else text {
+  font-size: 30.42rpx;
+  color: #666;
+  line-height: 40rpx;
+  margin-right: 18rpx;
+}
+.a .detail .else text.mr {
+  margin-right: 0;
+}
+.a .detail .add text {
+  font-size: 30.42rpx;
+  color: #666;
+}
+.a .blank {
+  width: 100%;
+  height: 23.4rpx;
+  background-color: #f6f6f6;
+}
+.a .title {
+  font-size: 32.76rpx;
+  color: #aaa;
+}
+.a .describe {
+  padding: 35.1rpx;
+}
+.a .describe .list {
+  font-size: 32.76rpx;
+  color: #666;
+  overflow: hidden;
+}
+.a .weal {
+  padding: 35.1rpx;
+}
+.a .weal .tr {
+  padding: 10rpx 0;
+}
+.a .weal .tr .td {
+  padding: 10rpx 0;
+  display: inline-block;
+  width: 25%;
+}
+.a .weal .tr .td image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10rpx;
+  width: 77.22rpx;
+  height: 77.22rpx;
+}
+.a .weal .tr .td text {
+  display: block;
+  text-align: center;
+  font-size: 23.4rpx;
+  color: #666;
+}
+.a .company {
+  padding: 35.1rpx;
+  border-bottom: 1px solid #e6e6e6;
+}
+.a .company .name {
+  font-size: 35.1rpx;
+  color: #333;
+  line-height: 60rpx;
+}
+.a .company .name text {
+  float: left;
+  display: inline-block;
+}
+.a .company .name .rz {
+  margin-top: 12rpx;
+  margin-left: 8rpx;
+  font-size: 23.4rpx;
+  color: #00c79c;
+  line-height: 32rpx;
+  padding: 0 6rpx;
+  border: 1px solid #00c79c;
+  border-radius: 2px;
+}
+.a .company .gm {
+  font-size: 28.08rpx;
+  color: #666666;
+  line-height: 46.8rpx;
+}
+.a .company .gm text {
+  padding-right: 10rpx;
+}
+.a .intro {
+  padding: 35.1rpx;
+}
+.a .intro .intro-detail {
+  font-size: 32.76rpx;
+  color: #666;
+  line-height: 46.8rpx;
+}
+.a .recommend .similar {
+  text-align: center;
+  font-size: 37.44rpx;
+  line-height: 117rpx;
+  border-bottom: 1px solid #e6e6e6;
+}
+.a .recommend .post-item {
+  padding: 35.1rpx;
+}
+.a .recommend .post-item .item-top {
+  position: relative;
+  padding-right: 150rpx;
+  padding-bottom: 11.7rpx;
+  border-bottom: 1px solid #ddd;
+}
+.a .recommend .post-item .item-top .title {
+  display: block;
+  font-size: 32.76rpx;
+  color: #333;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+.a .recommend .post-item .item-top .salary {
+  display: block;
+  font-size: 35.1rpx;
+  color: #ff615f;
+  height: 53rpx;
+  line-height: 53rpx;
+}
+.a .recommend .post-item .item-top .extra {
+  width: 100%;
+}
+.a .recommend .post-item .item-top .extra text {
+  display: inline-block;
+  padding: 0 8rpx;
+  margin-right: 8rpx;
+  font-size: 23.4rpx;
+  color: #00c79c;
+  height: 35.1rpx;
+  line-height: 35.1rpx;
+  border: 2rpx solid #00c79c;
+}
+.a .recommend .post-item .item-top .time {
+  position: absolute;
+  right: 0;
+  top: 8rpx;
+  font-size: 28.08rpx;
+  color: #aaa;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.a .recommend .post-item .item-top .apply {
+  position: absolute;
+  width: 117rpx;
+  border-radius: 6rpx;
+  text-align: center;
+  right: 0;
+  bottom: 14rpx;
+  background: #ff615f;
+  font-size: 28.08rpx;
+  color: #fff;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  line-height: 117rpx;
+  display: flex;
+  text-align: center;
+  font-size: 32.76rpx;
+}
+.bottom .send {
+  flex: 2;
+  background-color: #00c79c;
+  color: #fff;
+}
+.bottom .send image {
+  width: 30.42rpx;
+  height: 35.1rpx;
+  margin-right: 8rpx;
+  vertical-align: sub;
+}
+.bottom .call {
+  flex: 1;
+  background-color: #fff;
+  color: #00c79c;
+}
+.bottom .call image {
+  width: 38.61rpx;
+  height: 38.61rpx;
+  margin-right: 8rpx;
+  vertical-align: middle;
+}

@@ -1,0 +1,96 @@
+
+<view class="resume">
+	<view class="resume-photo">
+        <view class="dt">头像</view>
+        <view class="san"></view>
+        <image class="img"  src="{{avatarUrl}}"></image>
+    </view>
+	<view class="resume-item">
+		<view class="pd">
+			<view class="dt">姓名</view>
+			<input class="" bindinput='setPerson' placeholder-class="choice-content" align="right" value="{{person}}"/>
+		</view>
+	</view>
+
+		
+ <view class="resume-item">
+ 		<view class="pd">
+			<view class="dt">生日年份</view>
+        	<view class="san"></view>
+			 <picker mode="selector" value="{{yearIndex}}"  range="{{years}}" bindchange="choiceYear">
+		        <view class="choice-content">
+					{{years[yearIndex]}}
+		        </view>
+		    </picker>
+		</view>
+		</view>
+	<view class="resume-item">
+	<view class="pd">
+			<view class="dt">生日月份</view>
+        	<view class="san"></view>
+		    <picker mode="selector" value="{{monthIndex}}"  range="{{months}}" bindchange="choiceMonth">
+		        <view class="choice-content">
+					{{months[monthIndex]}}
+		        </view>
+		    </picker>
+	</view>
+	</view>
+			<!--<view class="resume-item">
+		<view class="pd">
+			<view class="dt">生日</view>
+        	<view class="san"></view>
+			<picker mode="date" fields="month"  value="{{date}}" start="1945-01" end="1999-01" bindchange="choiceBirthday">
+		        <view class="choice-content">
+		            {{date}}
+		        </view>
+		    </picker>
+		</view>
+	</view>-->
+	<view class="resume-item">
+		<view class="pd">
+			<view class="dt">性别</view>
+			<view class="radio-sex">
+				<radio-group class="sex-group clear" bindchange="radioSex">
+				    <view class="register-sex" wx:for-items="{{personSex}}">
+				        <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></radio>
+				        <view class="register-sex-icon" hidden>
+				            <image src="../../image/{{item.checked ? 'checked.png': 'unchecked.png'}}" class="register-sex-icon-checked"></image>
+				        </view>
+				        <label class="resume-sex-text" for="{{item.name}}"><text>{{item.name}}</text></label>
+				    </view>
+				</radio-group>
+			</view>
+		</view>
+	</view>
+
+
+	<view class="resume-status">
+		<view class="pd">
+			<view class="dt">求职状态</view>
+			<view class="status">
+    <switch class="switch" checked="{{openStatus}}" bindchange="switchChangeOpenStatus"/>
+    </view>
+
+			<view class="status" hidden>
+				<text class="al">已有工作</text>
+				<text class="ing">求职中</text>
+			</view>
+		</view>
+	</view>
+	<view class="save" bindtap="update">
+		<view>保存</view>
+	</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+

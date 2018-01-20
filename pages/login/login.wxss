@@ -1,0 +1,72 @@
+@import "../../common/css/reset.wxss";
+
+.login-img{
+    width: 365rpx;
+    height: 150rpx;
+    display: block;
+    margin: 80rpx auto 20rpx;
+    background-size: contain;
+}
+.login-view{
+    padding : 60rpx 60rpx;
+}
+.bottom_line{
+    height: 50rpx;
+    border-bottom: 2rpx solid #f3f3f3;
+    padding-top : 30rpx;
+    padding-bottom : 16rpx;
+}
+.login_code_input,
+.login_phone_input{
+    display: inline-block;
+    font-size: 32rpx;   
+    font-family:'microsoft yahei';
+    width:366rpx;
+}
+.login_icon{
+    display: inline-block;
+    max-width: 28rpx;
+    max-height: 32rpx;
+    margin-top: 10rpx;
+    margin-right: 10rpx;
+}
+.login_code_second{
+    position: absolute;
+    right: 10rpx;
+    top: 28rpx;
+    min-width: 160rpx;
+    text-align: center;
+    color: #fff;
+    height: 58rpx;
+    line-height: 58rpx;
+    border-radius: 4px;
+    padding: 0 10rpx;
+    background: #33d2b0;
+    font-size: 30rpx;
+}
+.login_button{
+    display: block;
+    color: #fff;
+    background: #33d2b0;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 60rpx;
+    font-size: 34rpx;
+}
+.timeout{
+    background: #dcdee0;
+}
+.bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.bottom image{
+    width: 100%;
+    height: 280rpx;
+    position:fixed;
+    bottom:0;
+}

@@ -1,0 +1,42 @@
+.model {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  height: 117rpx;
+  background-color: #fff;
+}
+.footer .item {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.footer .item .work,
+.footer .item .center,
+.footer .item .message {
+  color: #c8c8c8;
+  font-size: 23.4rpx;
+}
+.footer .item .work .foot-icon,
+.footer .item .center .foot-icon,
+.footer .item .message .foot-icon {
+  width: 46.8rpx;
+  height: 46.8rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top: 19.89rpx;
+}
+.footer .item .work text,
+.footer .item .center text,
+.footer .item .message text {
+  line-height: 35.1rpx;
+  font-size: 23.4rpx;
+}

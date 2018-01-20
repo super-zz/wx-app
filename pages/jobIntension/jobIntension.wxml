@@ -1,0 +1,68 @@
+<view class="intension">
+	请选择求职意向
+</view>
+<view>
+	<view class="classes">
+	<checkbox-group value="{{jobTag}}" bindchange="checkboxChange">
+		<block wx:for="{{categoryList}}" wx:for-index="ci">
+			<view class="title">{{categoryList[ci].name}}</view>
+			<block wx:for="{{categoryList[ci].list}}" wx:for-index="listarry">
+				<view class="menu-dt">
+					<block wx:for="{{categoryList[ci].list[listarry]}}" wx:for-index="li">
+						<text class="r {{menuStatus[ci][listarry][li]}}" data-id="{{ci}}-{{listarry}}-{{li}}" bindtap="classMenu">{{categoryList[ci].list[listarry][li].name}}</text>
+					</block>
+				</view>
+				<view class="menu-dd">
+					<block wx:for="{{categoryList[ci].list[listarry]}}" wx:for-index="li">
+						<view wx:if="{{li%4==0}}" class="first {{menuStatus[ci][listarry][0]}}">
+							<block wx:for="{{categoryList[ci].list[listarry][li].list}}" wx:for-index="ls">
+							 	<label class="checkbox {{classes[0][i]}}" >
+							    <checkbox hidden value="{{categoryList[ci].list[listarry][li].list[ls].name}}-{{categoryList[ci].list[listarry][li].list[ls].job_tag_id}}-{{categoryList[ci].list[listarry][li].list[ls].major_category_id}}" checked=""/>{{categoryList[ci].list[listarry][li].list[ls].name}}
+						      	</label>
+							</block>
+						</view>
+						<view wx:if="{{li%4==1}}" class="second  {{menuStatus[ci][listarry][1]}}">
+							<block wx:for="{{categoryList[ci].list[listarry][li].list}}" wx:for-index="ls">
+							 	<label class="checkbox {{classes[0][i]}}" >
+							    <checkbox hidden value="{{categoryList[ci].list[listarry][li].list[ls].name}}-{{categoryList[ci].list[listarry][li].list[ls].job_tag_id}}-{{categoryList[ci].list[listarry][li].list[ls].major_category_id}}" checked=""/>{{categoryList[ci].list[listarry][li].list[ls].name}}
+						      	</label>
+							</block>
+						</view>
+						<view wx:if="{{li%4==2}}" class="third  {{menuStatus[ci][listarry][2]}}">
+							<block wx:for="{{categoryList[ci].list[listarry][li].list}}" wx:for-index="ls">
+							 	<label class="checkbox {{classes[0][i]}}" >
+							    <checkbox hidden value="{{categoryList[ci].list[listarry][li].list[ls].name}}-{{categoryList[ci].list[listarry][li].list[ls].job_tag_id}}-{{categoryList[ci].list[listarry][li].list[ls].major_category_id}}" checked=""/>{{categoryList[ci].list[listarry][li].list[ls].name}}
+						      	</label>
+							</block>
+						</view>
+						<view wx:if="{{li%4==3}}" class="fourth  {{menuStatus[ci][listarry][3]}}">
+							<block wx:for="{{categoryList[ci].list[listarry][li].list}}" wx:for-index="ls">
+							 	<label class="checkbox {{classes[0][i]}}" >
+							    <checkbox hidden value="{{categoryList[ci].list[listarry][li].list[ls].name}}-{{categoryList[ci].list[listarry][li].list[ls].job_tag_id}}-{{categoryList[ci].list[listarry][li].list[ls].major_category_id}}" checked=""/>{{categoryList[ci].list[listarry][li].list[ls].name}}
+						      	</label>
+							</block>
+						</view>
+					</block>
+				</view>
+			</block>
+		</block>
+	</checkbox-group>
+	</view>
+</view>	
+
+<view class="selected">
+	<view class="top">
+		<text>还可以选择{{selectNum}}个职位</text>
+	</view>
+
+	<!--<navigator open-type="switchTab" url="../postlist/postlist?data={{navigatorArr}}" class="cmp">22完成</navigator>-->
+<view class="cmp" bindtap="back">完成</view>
+	<view class="select-job">
+		<block wx:for="{{selectJob}}" wx:for-index="index">
+			<view class="job" >
+				 {{item}}
+				 <view class="close" data-i="{{index}}" bindtap="removeSelect">x</view>
+				 </view>	
+		</block>
+	</view>
+</view>

@@ -1,0 +1,19 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.p_relative{
+	position: relative;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+.clear:after{
+	content:"\0020";
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden
+}

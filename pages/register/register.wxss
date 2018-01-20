@@ -1,0 +1,97 @@
+@import "../../common/css/reset.wxss";
+picker{
+	color: #000;
+}
+page{
+	background-color: #f6f6f6;
+}
+.register-img{
+	display: block;
+	width: 400rpx;
+	height: 60rpx;
+	margin: 0rpx auto;
+	padding-top: 40rpx;
+}
+.register-text{
+	font-size: 24rpx;
+	color: #999;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	padding-top: 10rpx;
+	padding-bottom: 40rpx;
+}
+.register-title{
+	float:left;
+	display: inline-block;
+	width: 120rpx;
+	padding-right: 40rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	font-size: 30rpx;
+    text-align-last:justify;
+}
+.register-input{
+	display: inline-block;
+	width: 290rpx;
+	font-size: 30rpx;
+	height: 100rpx;
+	line-height: 104rpx;
+}
+.register-item{
+	height: 100rpx;
+    border-bottom: 1px solid #f3f3f3;
+}
+.register-form{
+	padding: 30rpx;
+	background-color: #fff; 
+}
+.radio-sex{
+	display: inline-block;
+	line-height:104rpx;
+}
+.register-sex{
+	float: left;
+	height: 100rpx;
+	line-height: 93rpx;
+}
+.register-sex-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 36rpx;
+    height: 36rpx;
+    border-radius: 50%;
+}
+.register-sex-icon-checked {
+    position: absolute;
+    z-index: 2;
+    width: 36rpx;
+    height: 36rpx;
+}
+.register-sex-text{
+    padding: 0 10rpx;
+	font-size: 26rpx;
+}
+.choice-content{
+	font-size: 30rpx;
+	height: 100rpx;
+	line-height: 104rpx;
+	color: #aaaaaa;
+}
+.complete{
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+    color: #fff;
+    background: #33d2b0;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 60rpx;
+    font-size: 34rpx;
+}
+.bottom-n{
+	border-bottom: none;
+}

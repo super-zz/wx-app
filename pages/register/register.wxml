@@ -1,0 +1,94 @@
+<view class="container_register">
+    <view>
+       <image class="register-img" src="../../image/register.png" />
+       <text class="register-text">录入求职信息 精准推荐职位</text>
+    </view>
+    <view class="register-form">
+	    <view class="register-item">
+	    	<text class="register-title">姓名</text>
+	    	<input class="register-input fl" placeholder-class="choice-content" bindinput="setName" placeholder="请输入真实姓名"/>
+	    	<view class="radio-sex">
+			<radio-group class="radio-group" bindchange="radioSex">
+  <label class="radio" wx:for-items="{{personSex}}">
+    <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+  </label>
+</radio-group>
+	<!--			<radio-group class="sex-group clear" bindchange="radioSex">
+				    <view class="register-sex" wx:for-items="{{personSex}}">
+				        <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></radio>
+				        <view class="register-sex-icon" hidden>
+				            <image src="../../image/{{item.checked ? 'checked.png': 'unchecked.png'}}" class="register-sex-icon-checked"></image>
+				        </view>
+				        <label class="register-sex-text" for="{{item.name}}"><text>{{item.name}}</text></label>
+				    </view>
+				</radio-group>-->
+			</view>
+	    </view>
+	    <!--<view hidden class="register-item">
+	    	<text class="register-title">生日</text>
+		    <picker mode="date" fields="month" value="{{date}}" start="1945-01" end="1999-01" bindchange="choiceMonth">
+		        <view class="choice-content">
+		            {{date}}
+		        </view>
+		    </picker>
+	    </view>-->
+		 <view class="register-item">
+	    	<text class="register-title">生日年份</text>
+		    <picker mode="selector" value="{{yearIndex}}"  range="{{years}}" bindchange="choiceYear">
+		        <view class="choice-content">
+					{{yearShow}}
+		        </view>
+		    </picker>
+	    </view>
+		<view class="register-item">
+	    	<text class="register-title">生日月份</text>
+		    <picker mode="selector" value="{{monthIndex}}"  range="{{months}}" bindchange="choiceMonth">
+		        <view class="choice-content">
+					{{monthShow}}
+		        </view>
+		    </picker>
+	    </view>
+	    <view class="register-item">
+	    	<text class="register-title">最高学历</text>
+		    <picker value="{{eduIndex}}" range="{{eduArr}}" bindchange="choiceEdu">
+		        <view class="choice-content">
+		            {{selectEdu}}
+		        </view>
+		    </picker>
+	    </view>
+		<navigator open-type="navigate" url="/pages/jobIntension/jobIntension?selectJob={{selectJob}}&jobTag={{jobTag}}">
+	    <view class="register-item">
+	    	<text class="register-title">期望职位</text>
+			 <view class="choice-content">
+			 {{jobTagName}}
+		        </view>
+	    </view>
+		</navigator>
+	    <view class="register-item">
+	    	<text class="register-title">期望薪资</text>
+		    <picker value="{{payIndex}}" range="{{payArr}}" bindchange="choicePay">
+		        <view class="choice-content">
+		            {{selectSalary}}
+		        </view>
+		    </picker>
+	    </view>
+	    <view class="register-item">
+	    	<text class="register-title">求职省份</text>
+		    <picker range="{{provinceList}}" bindchange="choiceProvince">
+		        <view class="choice-content">
+					{{selectProvince}}
+		        </view>
+		    </picker>
+	    </view>
+	    <view class="register-item bottom-n">
+	    	<text class="register-title">求职城市</text>
+		    <picker value="{{cityList}}" range="{{cityList}}" bindchange="choiceCity">
+		        <view class="choice-content">
+				{{selectCity}}
+		        </view>
+		    </picker>
+	    </view>
+    </view>
+    <button bindtap="complete" class="complete">为我推荐职位</button>
+</view>
+

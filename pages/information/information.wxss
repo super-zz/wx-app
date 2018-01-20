@@ -1,0 +1,52 @@
+@import "../../common/css/reset.wxss";
+@import "../../common/css/footer.wxss";
+.x {
+  position: relative;
+  height: 148.59rpx;
+  border-bottom: 1px solid #f6f6f6;
+}
+.x .icon {
+  position: absolute;
+  left: 35.1rpx;
+  top: 23.4rpx;
+  width: 107.64rpx;
+  height: 107.64rpx;
+  overflow: visible;
+}
+.x .icon text {
+  position: absolute;
+  top: 0;
+  right: -10rpx;
+  width: 35.1rpx;
+  height: 35.1rpx;
+  line-height: 35.1rpx;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 23.4rpx;
+  color: #fff;
+  text-align: center;
+}
+.x .title {
+  position: absolute;
+  left: 170.82rpx;
+  top: 35.1rpx;
+  font-size: 36.27rpx;
+  color: #333;
+  line-height: 46.8rpx;
+}
+.x .title text {
+  display: block;
+}
+.x .title text.i {
+  font-size: 25.74rpx;
+  color: #aaa;
+}
+.x .san {
+  position: absolute;
+  right: 35.1rpx;
+  top: 62.01rpx;
+  width: 0;
+  height: 0;
+  border: 10rpx solid transparent;
+  border-left: 11.7rpx solid #eaeaea;
+}

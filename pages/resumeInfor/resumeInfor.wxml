@@ -1,0 +1,80 @@
+<view class="j">
+	<view class="img">
+		<image src="{{userInfo.avatarUrl}}" />
+		<text>{{resumeInfo.person}}</text>	
+		<view class="status" wx:if="{{open_status==1}}"> 正在求职 </view>
+    <view class="status" wx:elif="{{open_status==0}}"> 暂不求职 </view>
+	</view>
+	<view class="blank"></view>
+	<view class="jiben">
+		<view class="title">基本信息</view>
+		<view class="t c">
+			{{resumeInfo.person}} <text>|</text>
+			{{resumeInfo.sex}} <text>|</text>
+			{{resumeInfo.age}} <text>|</text>
+			{{resumeInfo.degree}} <text>|</text>
+			{{resumeInfo.period}}
+		</view>
+	</view>
+	<view class="blank"></view>
+	<view class="yixiang">
+		<view class="title">求职意向</view>
+		<view class="post">{{resumeInfo.job}}</view>
+		<view class="c">
+			{{resumeInfo.city_name}} <text>|</text>
+			{{resumeInfo.salary}}
+		</view>
+	</view>
+	<block wx:if="{{resumeInfo.work_experiences.length>0}}">
+	<view class="blank"></view>
+	<view class="jingyan">
+		<view class="title">工作经验</view>
+		<block wx:for="{{resumeInfo.work_experiences}}" wx:for-item="item">
+		
+		<view class="c t">{{item.from_year}}.{{item.from_month}}-{{item.to_year}}.{{item.to_month}}</view>
+		<view class="m">
+			{{item.company}}<text>|</text>
+			{{item.job}}
+		</view>
+		<view class="c">
+		工作内容：{{item.description}}
+		</view>
+		</block>
+	</view>
+	</block>
+	<block wx:if="{{resumeInfo.edu_experiences.length>0}}">
+	<view class="blank"></view>
+	<view class="jiaoyu">
+		<view class="title">教育经历</view>
+		<block wx:for="{{resumeInfo.edu_experiences}}" wx:for-item="item">
+		<view class="c t">{{item.from_year}}.{{item.from_month}}-{{item.to_year}}.{{item.to_month}}</view>
+		<view class="m">
+			{{item.school}}<text>|</text>
+			{{item.specialty}}
+		</view>
+		</block>
+	</view>
+	</block>
+	<block wx:if="{{resumeInfo.merit_ids.length>0}}">
+	<view class="blank"></view>
+	<view class="liangdian">
+		<view class="title">我的亮点</view>
+		<view class="item">
+		<block wx:for="{{resumeInfo.merits}}" wx:for-item="item">
+		<text wx:if="{{item.isSelect==1}}">{{item.name}}</text>
+		</block>
+		</view>
+	</view>
+	</block>
+	<block wx:if="{{resumeInfo.description}}">
+	<view class="blank"></view>
+	<view class="pingjia">
+		<view class="title">自我评价</view>
+		<view class="c t">
+		
+		{{resumeInfo.description}}
+		</view>
+	</view>
+	</block>	
+
+</view>

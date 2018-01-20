@@ -1,0 +1,67 @@
+<navigator open-type="navigate" url="/pages/myresume/myresume">
+<view class="top" style="background: url(http://sta.ganjistatic1.com/src/image/project/Columbus/resume_wave.png) center bottom no-repeat;background-size: contain">
+    <image class="tx" src="{{avatarUrl}}"></image>
+    <text class="name">{{person}}</text>
+
+    <view class="status" wx:if="{{open_status==1}}"> 正在求职 </view>
+    <view class="status" wx:elif="{{open_status==0}}"> 暂不求职 </view>
+    <view class="modify">
+        <image src="../../image/icon-list-modify.png"></image>
+    </view>
+</view>
+</navigator>
+<view class="line"></view>
+<view class="tab">
+<navigator open-type="navigate" url="/pages/resumeList/resumeList">
+    <view class="tab-item">
+    
+        <view class="pd">
+            <view class="icon" style="background: url(http://sta.ganjistatic1.com/src/image/project/Columbus/sprites.png) no-repeat;background-size: 340rpx;background-position-y: -94rpx; background-position-x: -10rpx">
+                
+            </view>
+            <view class="text">我的简历</view>
+          
+            <view class="san"></view>
+            <view class="per">完整度{{integrity}}%</view>
+        </view>
+    </view>
+    </navigator>
+    <view class="tab-item" hidden="false">
+        <view class="pd">
+            <view class="icon" style="background: url(http://sta.ganjistatic1.com/src/image/project/Columbus/sprites.png) no-repeat;background-size: 340rpx;background-position-y: -94rpx; background-position-x: -62rpx;" ></view>
+            <view class="text">今日优选</view>
+            
+            <view class="san"></view>
+        </view>
+    </view>
+    <navigator open-type="navigate" url="/pages/interviewInfor/interviewInfor?type=0">
+    <view class="tab-item">
+        <view class="pd">
+            <view  class="icon" style="background: url(http://sta.ganjistatic1.com/src/image/project/Columbus/sprites.png) no-repeat;background-size: 340rpx;background-position-y: -94rpx; background-position-x: -112rpx; "></view>
+            <view class="text">面试邀请</view>
+            
+            <view class="san"></view>
+        </view>
+    </view>
+    </navigator>
+    <navigator open-type="navigate" url="/pages/deliverBack/deliverBack">
+    <view class="tab-item">
+        <view class="pd">
+            <view  class="icon" style="background: url(http://sta.ganjistatic1.com/src/image/project/Columbus/sprites.png) no-repeat;background-size: 340rpx; background-position-y: -94rpx; background-position-x: -156rpx; "></view>
+            <view class="text">投递反馈</view>
+            <view class="san"></view>
+        </view>
+    </view>
+    </navigator>
+    <navigator open-type="navigate" url="/pages/feedback/feedback">
+    <view class="tab-item">
+        <view class="pd">
+            <view  class="icon" style="background: url(http://sta.ganjistatic1.com/src/image/project/Columbus/sprites.png) no-repeat;background-size: 340rpx; background-position-y: -94rpx; background-position-x: -156rpx; "></view>
+            <view class="text">意见反馈</view>    
+            <view class="san"></view>
+        </view>
+    </view>
+    </navigator>
+    <button bindtap="unbind" class="unbind_button">退出登录</button>
+</view>
+
